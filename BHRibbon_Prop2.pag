@@ -1,0 +1,436 @@
+VERSION 5.00
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomctl.ocx"
+Begin VB.PropertyPage BHRibbon_Prop2 
+   Caption         =   "Buttons"
+   ClientHeight    =   3000
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   6705
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   3000
+   ScaleWidth      =   6705
+   Begin VB.Frame frmCats 
+      Caption         =   "Categories"
+      Height          =   1335
+      Left            =   0
+      TabIndex        =   21
+      Top             =   1560
+      Width           =   3255
+      Begin VB.CommandButton btnCCatL 
+         Caption         =   "<"
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   1560
+         TabIndex        =   27
+         Top             =   240
+         Width           =   255
+      End
+      Begin VB.TextBox txtCurCat 
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   1080
+         TabIndex        =   26
+         Top             =   240
+         Width           =   375
+      End
+      Begin VB.CommandButton btnCCatR 
+         Caption         =   ">"
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   1800
+         TabIndex        =   25
+         Top             =   240
+         Width           =   255
+      End
+      Begin VB.CommandButton btnNewCat 
+         Caption         =   "New Cat"
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   2160
+         TabIndex        =   24
+         Top             =   240
+         Width           =   975
+      End
+      Begin VB.TextBox txtCatCaption 
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   1080
+         TabIndex        =   23
+         Top             =   600
+         Width           =   2055
+      End
+      Begin VB.CheckBox chkDlg 
+         Caption         =   "Dialog Button"
+         Enabled         =   0   'False
+         Height          =   255
+         Left            =   1080
+         TabIndex        =   22
+         Top             =   960
+         Width           =   1335
+      End
+      Begin VB.Label lblCurCat 
+         AutoSize        =   -1  'True
+         Caption         =   "Current Cat:"
+         Height          =   195
+         Left            =   120
+         TabIndex        =   29
+         Top             =   240
+         Width           =   840
+      End
+      Begin VB.Label lblCatCaption 
+         AutoSize        =   -1  'True
+         Caption         =   "Caption:"
+         Height          =   195
+         Left            =   420
+         TabIndex        =   28
+         Top             =   600
+         Width           =   585
+      End
+   End
+   Begin VB.Frame frmButs 
+      Caption         =   "Buttons"
+      Height          =   2775
+      Left            =   3360
+      TabIndex        =   8
+      Top             =   0
+      Width           =   3255
+      Begin VB.TextBox txtButTooltip 
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   1080
+         TabIndex        =   30
+         Top             =   960
+         Width           =   2055
+      End
+      Begin VB.Frame frmIcon 
+         Caption         =   "Icon"
+         Height          =   1095
+         Left            =   240
+         TabIndex        =   17
+         Top             =   1560
+         Width           =   2775
+         Begin MSComctlLib.Slider sldIcon 
+            Height          =   495
+            Left            =   840
+            TabIndex        =   19
+            Top             =   360
+            Width           =   1815
+            _ExtentX        =   3201
+            _ExtentY        =   873
+            _Version        =   393216
+            Enabled         =   0   'False
+            Max             =   5
+         End
+         Begin VB.PictureBox picIcon 
+            Enabled         =   0   'False
+            Height          =   615
+            Left            =   120
+            ScaleHeight     =   555
+            ScaleWidth      =   555
+            TabIndex        =   18
+            Top             =   360
+            Width           =   615
+         End
+      End
+      Begin VB.CheckBox chkMore 
+         Caption         =   "More"
+         Enabled         =   0   'False
+         Height          =   255
+         Left            =   1080
+         TabIndex        =   16
+         Top             =   1320
+         Width           =   735
+      End
+      Begin VB.TextBox txtButCaption 
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   1080
+         TabIndex        =   14
+         Top             =   600
+         Width           =   2055
+      End
+      Begin VB.CommandButton btnNewBut 
+         Caption         =   "New But"
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   2160
+         TabIndex        =   13
+         Top             =   240
+         Width           =   975
+      End
+      Begin VB.CommandButton btnCButR 
+         Caption         =   ">"
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   1800
+         TabIndex        =   12
+         Top             =   240
+         Width           =   255
+      End
+      Begin VB.TextBox txtCurBut 
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   1080
+         TabIndex        =   11
+         Top             =   240
+         Width           =   375
+      End
+      Begin VB.CommandButton btnCButL 
+         Caption         =   "<"
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   1560
+         TabIndex        =   9
+         Top             =   240
+         Width           =   255
+      End
+      Begin VB.Label lblToolTip 
+         Alignment       =   1  'Right Justify
+         Caption         =   "Tooltip:"
+         Height          =   255
+         Left            =   360
+         TabIndex        =   31
+         Top             =   960
+         Width           =   615
+      End
+      Begin VB.Label lblButCaption 
+         AutoSize        =   -1  'True
+         Caption         =   "Caption:"
+         Height          =   195
+         Left            =   420
+         TabIndex        =   15
+         Top             =   600
+         Width           =   585
+      End
+      Begin VB.Label lblCurBut 
+         AutoSize        =   -1  'True
+         Caption         =   "Current But:"
+         Height          =   195
+         Left            =   120
+         TabIndex        =   10
+         Top             =   240
+         Width           =   840
+      End
+   End
+   Begin VB.Frame frmTabs 
+      Caption         =   "Tabs"
+      Height          =   1455
+      Left            =   0
+      TabIndex        =   0
+      Top             =   0
+      Width           =   3255
+      Begin VB.CommandButton btnDelTab 
+         Caption         =   "Delete Tab"
+         Height          =   255
+         Left            =   2160
+         TabIndex        =   20
+         Top             =   600
+         Width           =   975
+      End
+      Begin VB.TextBox txtTabCaption 
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   960
+         TabIndex        =   6
+         Top             =   960
+         Width           =   2055
+      End
+      Begin VB.CommandButton btnNewTab 
+         Caption         =   "New Tab"
+         Height          =   285
+         Left            =   2160
+         TabIndex        =   5
+         Top             =   240
+         Width           =   975
+      End
+      Begin VB.CommandButton btnCTabR 
+         Caption         =   ">"
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   1800
+         TabIndex        =   4
+         Top             =   240
+         Width           =   255
+      End
+      Begin VB.TextBox txtCurTab 
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   1080
+         TabIndex        =   3
+         Top             =   240
+         Width           =   375
+      End
+      Begin VB.CommandButton btnCTabL 
+         Caption         =   "<"
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   1560
+         TabIndex        =   1
+         Top             =   240
+         Width           =   255
+      End
+      Begin VB.Label lblTabCaption 
+         AutoSize        =   -1  'True
+         Caption         =   "Caption:"
+         Height          =   195
+         Left            =   300
+         TabIndex        =   7
+         Top             =   960
+         Width           =   585
+      End
+      Begin VB.Label lblCurTab 
+         AutoSize        =   -1  'True
+         Caption         =   "Current Tab:"
+         Height          =   195
+         Left            =   120
+         TabIndex        =   2
+         Top             =   240
+         Width           =   885
+      End
+   End
+End
+Attribute VB_Name = "BHRibbon_Prop2"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+Private Type Category
+    Tab As Integer
+    Caption As String
+    Dialog As Boolean
+    ID As Integer
+End Type
+Private Type Button
+    Caption As String
+    Tooltip As String
+    Tab As Integer
+    Category As Integer
+    More As Boolean
+    Icon As Integer
+    ID As Integer
+End Type
+
+Dim iCurTab As Integer, iCurCat As Integer, iCurBut As Integer
+Dim sTab() As String, tCat() As Category, tBut() As Button
+Dim tCurCat() As Category, tCurBut() As Button
+Dim tRibbon As BHRibbon
+
+Private Sub btnNewBut_Click()
+If (Not tBut) = True Then ReDim tCat(0) Else ReDim Preserve tCat(UBound(tBut) + 1)
+SetBut UBound(tCat)
+End Sub
+
+Private Sub btnNewCat_Click()
+If (Not tCat) = True Then ReDim tCat(0) Else ReDim Preserve tCat(UBound(sTab) + 1)
+SetCat UBound(tCat)
+End Sub
+
+Private Sub btnNewTab_Click()
+If (Not sTab) = True Then ReDim sTab(0) Else ReDim Preserve sTab(UBound(sTab) + 1)
+SetTab UBound(sTab)
+End Sub
+
+Private Sub PropertyPage_SelectionChanged()
+Dim iCount As Integer, aHold() As String, aHold2() As String, iHold As Integer, iHold2 As Integer
+Set tRibbon = SelectedControls(0)
+If (tRibbon.Tabs = "") Then Exit Sub
+sTab = Split(tRibbon.Tabs, Chr(1))
+SetTab 0
+If (tRibbon.Cats = "") Then Exit Sub
+aHold = Split(tRibbon.Cats, Chr(1))
+ReDim tCat(UBound(aHold))
+For iCount = 0 To UBound(aHold)
+    aHold2 = Split(aHold(iCount), Chr(2))
+    With tCat(iCount)
+        .Tab = aHold2(0)
+        .Caption = aHold(1)
+        .ID = iHold
+        If (iHold2 = .Tab) Then
+            iHold = iHold + 1
+        Else
+            iHold = 0
+            iHold2 = .Tab
+        End If
+        If (.Tab = iCurTab) Then
+            If (Not tCurCat) = True Then ReDim tCurCat(0) Else ReDim tCurCat(UBound(tCat) + 1)
+            tCurCat(UBound(tCurCat)) = tCat(iCount)
+        End If
+    End With
+Next iCount
+SetCat 0
+If (tRibbon.Buts = "") Then Exit Sub
+aHold = Split(tRibbon.Buts, Chr(1))
+ReDim tBut(UBound(aHold))
+For iCount = 0 To UBound(aHold)
+    aHold2 = Split(aHold(iCount), Chr(2))
+    With tBut(iCount)
+        .Tab = aHold2(0)
+        .Category = aHold2(1)
+        .Icon = aHold2(2)
+        .Caption = aHold2(3)
+        .Tooltip = aHold2(4)
+        .More = aHold2(5) = "T"
+        If (.Tab = iCurTab And .Category = iCurCat) Then
+            If (Not tCurBut) = True Then ReDim tCurBut(0) Else ReDim tCurBut(UBound(tBut) + 1)
+            tCurBut(UBound(tCurBut)) = tBut(iCount)
+        End If
+    End With
+Next iCount
+SetBut 0
+End Sub
+Private Sub SetTab(ByVal Num As Integer)
+iCurTab = Num
+txtCurTab.Enabled = Num <> vbNull '    All of this code
+txtTabCaption.Enabled = Num <> vbNull 'enables or disables
+btnCTabL.Enabled = Num <> vbNull '     all of the tab controls
+btnCTabR.Enabled = Num <> vbNull '     if there is
+btnDelTab.Enabled = Num <> vbNull '    any need to do so
+txtCurTab = Num
+If (Num = vbNull) Then
+    SetCat vbNull
+    txtTabCaption = ""
+    Exit Sub
+Else
+    txtTabCaption = sTab(Num)
+    SetCat 0
+End If
+End Sub
+Private Sub SetCat(ByVal Num As Integer)
+iCurCat = Num
+txtCurCat.Enabled = Num <> vbNull
+btnCCatL.Enabled = Num <> vbNull
+btnCCatR.Enabled = Num <> vbNull
+txtCatCaption.Enabled = Num <> vbNull
+chkDlg.Enabled = Num <> vbNull
+txtCurCat = Num
+If (Num = vbNull) Then
+    txtCatCaption = ""
+    SetBut vbNull
+Else
+    txtCatCaption = tCurCat(Num).Caption
+    chkDlg = tCurCat(Num).Dialog
+    SetBut 0
+End If
+End Sub
+Private Sub SetBut(ByVal Num As Integer)
+iCurBut = Num
+txtCurBut.Enabled = Num <> vbNull
+btnCButL.Enabled = Num <> vbNull
+btnCButR.Enabled = Num <> vbNull
+btnNewBut.Enabled = Num <> vbNull
+txtButCaption.Enabled = Num <> vbNull
+txtButTooltip.Enabled = Num <> vbNull
+chkMore.Enabled = Num <> vbNull
+sldIcon.Enabled = Num <> vbNull
+txtCurBut = Num
+If (Num = vbNull) Then
+    txtButCaption = ""
+    txtButTooltip = ""
+    sldIcon.Value = 0
+Else
+    txtButCaption = tCurBut(Num).Caption
+    txtButTooltip = tCurBut(Num).Tooltip
+    chkMore = tCurBut(Num).More
+    sldIcon.Value = tCurBut(Num).Icon
+End If
+End Sub
